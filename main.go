@@ -80,6 +80,7 @@ func ChangeWallpaper() {
 	}
 	wallpaper.SetFromFile(dir + "\\image.jpg")
 	fmt.Println("Wallpaper changed to :", background)
+	os.Remove(background)
 }
 
 // ReadFile read details.json and print to screen some information
